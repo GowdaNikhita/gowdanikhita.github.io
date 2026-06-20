@@ -1,0 +1,54 @@
+:root {
+  --void-black:     #0A0E17;
+  --midnight-navy:  #0F1923;
+  --steel-outline:  #1E2D3D;
+  --navy-raised:    #13212E;
+  --navy-sunken:    #0C141D;
+
+  --phosphor-cyan:  #00D4FF;
+  --signal-green:   #00FF88;
+  --breach-red:     #FF3B3B;
+  --deep-teal:      #0A4A6E;
+
+  --sev-critical:   #FF3B3B;
+  --sev-high:       #FF8A3B;
+  --sev-medium:     #FFD23B;
+  --sev-low:        #7A9AB0;
+
+  --arctic-white:   #E8F4F8;
+  --fog-grey:       #7A9AB0;
+  --slate:          #3A5068;
+
+  --cyan-12:   color-mix(in srgb, var(--phosphor-cyan) 12%, transparent);
+  --cyan-20:   color-mix(in srgb, var(--phosphor-cyan) 20%, transparent);
+  --cyan-40:   color-mix(in srgb, var(--phosphor-cyan) 40%, transparent);
+  --green-12:  color-mix(in srgb, var(--signal-green) 12%, transparent);
+  --green-20:  color-mix(in srgb, var(--signal-green) 20%, transparent);
+  --red-12:    color-mix(in srgb, var(--breach-red) 12%, transparent);
+  --red-20:    color-mix(in srgb, var(--breach-red) 20%, transparent);
+
+  --bg-page:        var(--void-black);
+  --surface-card:   var(--midnight-navy);
+  --surface-raised: var(--navy-raised);
+  --surface-sunken: var(--navy-sunken);
+  --surface-hover:  var(--deep-teal);
+
+  --border-default: var(--steel-outline);
+  --border-strong:  #2A4055;
+  --border-accent:  var(--phosphor-cyan);
+  --grid-line:      var(--steel-outline);
+
+  --text-primary:   var(--arctic-white);
+  --text-secondary: var(--fog-grey);
+  --text-ghost:     var(--slate);
+  --text-accent:    var(--phosphor-cyan);
+  --text-on-accent: var(--void-black);
+
+  --link:           var(--phosphor-cyan);
+  --link-hover:     #5CE6FF;
+  --focus-ring:     var(--phosphor-cyan);
+
+  --state-live:     var(--signal-green);
+  --state-success:  var(--signal-green);
+  --state-danger:   var(--breach-red);
+}

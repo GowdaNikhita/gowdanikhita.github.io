@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# Local tooling / secrets (portable — don't rely on a global gitignore)
+.claude/
+.env
+.env.*
+!.env.example
