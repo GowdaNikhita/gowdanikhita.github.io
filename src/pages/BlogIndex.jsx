@@ -13,7 +13,7 @@ export function BlogIndex() {
           </div>
           <h1 className="blog-hero-title">Field Notes</h1>
           <p className="blog-hero-sub">
-            Writing about security engineering, LLM red-teaming, and cloud infrastructure — one month at a time. Opinions are my own and based on things I've actually built and broken.
+            Notes on security engineering, LLM red-teaming, and cloud infrastructure, roughly one a month. Opinions are my own, based on things I've actually built and broken.
           </p>
         </div>
 

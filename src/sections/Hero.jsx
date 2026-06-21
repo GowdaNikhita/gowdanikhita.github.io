@@ -30,8 +30,9 @@ export function Hero() {
             <StatusPill tone="live">Actively Seeking Opportunities</StatusPill>
           </div>
           <p className="hero-summary">
-            Security engineer with hands-on experience in threat modeling, secure code review,
-            and cloud security automation — shipping production Python and AWS infrastructure.
+            Security engineer with about a year of hands-on experience in threat modeling,
+            secure code review, and cloud security automation. I ship production Python and
+            deploy infrastructure on AWS.
           </p>
           <p className="hero-focus">
             <span className="mono-key">Focus:</span> Threat Intelligence · LLM Red-Teaming · Cloud Security Automation

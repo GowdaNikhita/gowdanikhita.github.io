@@ -5,7 +5,7 @@ const entries = [
     date: '2026',
     status: 'active',
     title: 'Application Threat Intelligence Intern — Keysight Technologies',
-    body: 'Automated BlackDuck SCA across the full dependency tree — found 3 high-severity CVEs, flagged ~40% of deps, cut manual triage ~30%. Building STRIDE threat models; resolved TLS/CORS issues in a C-to-Python-to-HTTP pipeline.',
+    body: 'Automated BlackDuck SCA across the full dependency tree. Found 3 high-severity CVEs, flagged ~40% of deps, and cut manual triage ~30%. Currently building STRIDE threat models, and resolved TLS/CORS issues in a C-to-Python-to-HTTP pipeline.',
   },
   {
     date: '2025',

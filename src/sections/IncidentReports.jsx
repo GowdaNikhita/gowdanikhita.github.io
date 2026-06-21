@@ -20,7 +20,7 @@ const projects = [
     name: 'RetailOps / Kira: AIOps Platform',
     featured: false,
     objective: 'Autonomous incident-response platform correlating multi-source telemetry to detect anomalies without manual triage.',
-    vuln: 'CloudWatch logs, Prometheus metrics, and EKS cluster health were siloed — no cross-layer anomaly correlation or unified query surface.',
+    vuln: 'CloudWatch logs, Prometheus metrics, and EKS cluster health were siloed, with no cross-layer anomaly correlation or unified query surface.',
     resolution: 'Deployed microservices on AWS with Terraform/ArgoCD/GitHub Actions. LLM-powered natural-language incident queries cut MTTD significantly.',
     tags: ['AWS', 'Terraform', 'Prometheus', 'Grafana'],
     github: 'https://github.com/GowdaNikhita',
