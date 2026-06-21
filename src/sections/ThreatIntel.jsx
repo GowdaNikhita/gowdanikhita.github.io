@@ -1,6 +1,13 @@
+import { ArrowUpRight } from 'lucide-react';
 import { TelemetryWidget } from '../components/data/TelemetryWidget';
 
-const cells = Array.from({ length: 7 * 17 }, () => Math.random());
+const GITHUB = 'https://github.com/GowdaNikhita';
+
+// Deterministic pattern (stable across reloads) — illustrative, links to the real profile.
+const cells = Array.from({ length: 7 * 17 }, (_, i) => {
+  const x = Math.sin(i * 12.9898) * 43758.5453;
+  return x - Math.floor(x);
+});
 
 export function ThreatIntel() {
   return (
@@ -16,10 +23,10 @@ export function ThreatIntel() {
           <TelemetryWidget label="Triage Reduction"     value="30"    unit="%"     tone="green" caption="CI pipeline automation" />
           <TelemetryWidget label="GPA"                  value="4.0"   tone="cyan"  caption="M.S. · Ohio State" />
         </div>
-        <div className="activity">
+        <a className="activity" href={GITHUB} target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">
           <div className="activity-head">
             <span className="mono-eyebrow" style={{ color: 'var(--text-primary)' }}>GITHUB ACTIVITY</span>
-            <span className="mono-key">// github.com/GowdaNikhita</span>
+            <span className="mono-key activity-link">github.com/GowdaNikhita <ArrowUpRight size={12} /></span>
           </div>
           <div className="activity-grid">
             {cells.map((v, i) => {
@@ -27,7 +34,7 @@ export function ThreatIntel() {
               return <span key={i} className={`commit l${lvl}`} />;
             })}
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );

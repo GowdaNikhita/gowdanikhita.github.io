@@ -28,6 +28,24 @@ export function useDecrypt(text, { duration = 800, delay = 0, run = true } = {})
   return output;
 }
 
+export function useTheme() {
+  const getInitial = () =>
+    (typeof document !== 'undefined' && document.documentElement.getAttribute('data-theme')) || 'dark';
+  const [theme, setTheme] = useState(getInitial);
+
+  const apply = (next) => {
+    setTheme(next);
+    try {
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    } catch (e) { /* storage may be unavailable */ }
+  };
+
+  const toggle = () => apply(theme === 'light' ? 'dark' : 'light');
+
+  return { theme, toggle, setTheme: apply };
+}
+
 export function useInView(opts = { threshold: 0.2 }) {
   const ref = useRef(null);
   const [seen, setSeen] = useState(false);

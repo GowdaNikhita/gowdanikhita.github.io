@@ -1,4 +1,3 @@
-import { ExternalLink } from 'lucide-react';
 import { Card } from '../components/core/Card';
 import { SeverityBadge } from '../components/feedback/SeverityBadge';
 import { RedactedText } from '../components/data/RedactedText';
@@ -70,8 +69,7 @@ export function IncidentReports() {
                 {p.tags.map((t) => <span className="report-tag" key={t}>{t}</span>)}
               </div>
               <div className="report-links">
-                <Button as="a" href={p.github} target="_blank" rel="noopener noreferrer" variant="ghost" mono size="sm" iconRight={<BrandIcon name="github" size={14} />}>GitHub</Button>
-                <Button as="a" href="#" variant="ghost" mono size="sm" iconRight={<ExternalLink size={14} />}>Write-up</Button>
+                <Button as="a" href={p.github} target="_blank" rel="noopener noreferrer" variant="ghost" mono size="sm" iconRight={<BrandIcon name="github" size={14} />}>View on GitHub</Button>
               </div>
             </Card>
           ))}

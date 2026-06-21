@@ -51,4 +51,51 @@
   --state-live:     var(--signal-green);
   --state-success:  var(--signal-green);
   --state-danger:   var(--breach-red);
+
+  /* surfaces that need to flip per-theme but are referenced in kit.css */
+  --nav-bg:     color-mix(in srgb, var(--void-black) 80%, transparent);
+  --overlay-bg: var(--bg-page);
+  --hero-fade:  var(--void-black);
+  --accent-strong: var(--phosphor-cyan);
+}
+
+/* ── Light theme ─────────────────────────────────────────────
+   Activated by <html data-theme="light">. Dark remains the default.
+   Accent hues are darkened for WCAG-AA contrast on light surfaces;
+   pure #00D4FF is reserved for glows/charts only.            */
+:root[data-theme="light"] {
+  --phosphor-cyan:  #00708F;   /* accessible accent: links, fills, accent text */
+  --accent-strong:  #00D4FF;   /* bright cyan kept only for glows/decoration   */
+  --signal-green:   #0A7D55;
+  --breach-red:     #D11F1F;
+
+  --sev-critical:   #D11F1F;
+  --sev-high:       #C2410C;
+  --sev-medium:     #A16207;
+  --sev-low:        #475569;
+
+  --bg-page:        #F4F8FB;
+  --surface-card:   #FFFFFF;
+  --surface-raised: #E9F0F6;
+  --surface-sunken: #EAF1F6;
+  --surface-hover:  #DBE7F0;
+
+  --border-default: #C8D6E2;
+  --border-strong:  #9FB4C6;
+  --border-accent:  var(--phosphor-cyan);
+  --grid-line:      #DCE6EE;
+
+  --text-primary:   #0D1B2A;
+  --text-secondary: #44586B;
+  --text-ghost:     #8294A6;
+  --text-accent:    var(--phosphor-cyan);
+  --text-on-accent: #FFFFFF;
+
+  --link:           var(--phosphor-cyan);
+  --link-hover:     #00536B;
+  --focus-ring:     var(--phosphor-cyan);
+
+  --nav-bg:     color-mix(in srgb, #FFFFFF 82%, transparent);
+  --overlay-bg: var(--bg-page);
+  --hero-fade:  var(--bg-page);
 }

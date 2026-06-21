@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nikhita Gowda — Security Engineer</title>
+    <meta name="description" content="Nikhita Gowda — Security Engineer. Threat modeling, LLM red-teaming, and cloud security automation. Selected projects, experience, and contact." />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0A0E17" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F4F8FB" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script>
+      // Set theme before first paint to avoid a flash of the wrong theme.
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var theme = stored ||
+            (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -48,7 +48,7 @@
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   font-family: var(--font-mono);
   font-size: var(--text-sm);
-  color: var(--arctic-white);
+  color: var(--text-primary);
   line-height: var(--leading-normal);
   font-style: normal;
 }

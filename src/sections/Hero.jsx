@@ -29,11 +29,15 @@ export function Hero() {
           <div style={{ margin: '26px 0 14px' }}>
             <StatusPill tone="live">Actively Seeking Opportunities</StatusPill>
           </div>
+          <p className="hero-summary">
+            Security engineer with hands-on experience in threat modeling, secure code review,
+            and cloud security automation — shipping production Python and AWS infrastructure.
+          </p>
           <p className="hero-focus">
             <span className="mono-key">Focus:</span> Threat Intelligence · LLM Red-Teaming · Cloud Security Automation
           </p>
           <div className="hero-cta">
-            <Button as="a" href="/resume.pdf" variant="primary" size="lg" icon={<Download size={18} />}>
+            <Button as="a" href="/resume.pdf" download="Nikhita_Gowda_Resume.pdf" variant="primary" size="lg" icon={<Download size={18} />}>
               Download Resume
             </Button>
             <Button as="a" href="#projects" variant="secondary" size="lg" iconRight={<ArrowRight size={16} />}>
